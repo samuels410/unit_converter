@@ -1,0 +1,25 @@
+<div class="main_box">
+  <h1>Unit converter</h1>
+
+  <div class="conversion_frame">
+
+    <%= select_tag(:measurement_type_id, options_from_collection_for_select(@measurement_types, :id, :name),
+                   class: "google_style", action:  api_change_measurement_path) %>
+
+    <div class="unit_box">
+      <input class="unit forward" data-action="forward" data-url="<%= api_convert_forward_path %> " />
+
+    </div>
+    <div class="equal">=</div>
+    <div class="unit_box">
+      <input class="unit backward"  data-action="backward"  data-url="<%= api_convert_backward_path %>" />
+
+    </div>
+
+    <label id="unit_name_forward" for="source_unit" class="unit_name"><%= @conversion.source_unit.name %></label>
+    <label id="unit_name_backward" for="target_unit" class="unit_name"><%= @conversion.target_unit.name %></label>
+
+  </div>
+
+
+</div>

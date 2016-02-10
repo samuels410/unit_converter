@@ -1,0 +1,19 @@
+== README
+
+About the app
+
+* Ruby 2.1.6
+
+* Rails 4.0.0
+
+* Sqlite
+
+How to run
+
+* bundle install
+
+* bundle exec rake db:migrate
+
+* bundle exec rake db:seed
+
+* rails s

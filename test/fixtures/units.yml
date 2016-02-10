@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+celsius:
+  id: 1
+  name: Celsius
+  measurement_type_id: 1
+
+fahrenheit:
+  id: 2
+  name: Fahrenheit
+  measurement_type_id: 1
+
+second:
+  id: 3
+  name: Second
+  measurement_type_id: 2
+
+minute:
+  id: 4
+  name: Minute
+  measurement_type_id: 2
